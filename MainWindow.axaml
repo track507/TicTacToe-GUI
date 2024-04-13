@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="TicTacToe.MainWindow"
+        Title="TicTacToe" Height="500"
+        Width="500">
+        <StackPanel HorizontalAlignment="Center" Margin="20">
+            <Grid ColumnDefinitions="100, 100, 100, 125"
+                RowDefinitions="25, Auto, Auto, Auto, Auto, 25" Margin="20">
+                    <Button x:Name="Button1"  Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="1" Grid.Column="0"></Button>
+                    <Button x:Name="Button2" Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="1" Grid.Column="1"></Button>
+                    <Button x:Name="Button3" Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="1" Grid.Column="2"></Button>
+                    <Button x:Name="Button4" Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="2" Grid.Column="0"></Button>
+                    <Button x:Name="Button5" Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="2" Grid.Column="1"></Button>
+                    <Button x:Name="Button6" Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="2" Grid.Column="2"></Button>
+                    <Button x:Name="Button7" Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="3" Grid.Column="0"></Button>
+                    <Button x:Name="Button8" Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="3" Grid.Column="1"></Button>
+                    <Button x:Name="Button9" Background="White"
+                    Width="100" Height="100" Click="ButtonHandler"
+                    Grid.Row="3" Grid.Column="2"></Button>
+                    <TextBox x:Name="TextBox1" Background="Transparent" IsReadOnly="True" Height="25" Width = "100" TextWrapping="Wrap" Grid.Row="0" Grid.Column="3" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBox>
+                    <TextBox x:Name="WinBox" Background="Transparent" IsReadOnly="True" Height="25" Width = "100" TextWrapping="Wrap" Grid.Row="1" Grid.Column="3" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBox> 
+                    <TextBox x:Name="RecordBox" Background="Transparent" IsReadOnly="True" Height="75" Width = "125" TextWrapping="Wrap" Grid.Row="2" Grid.Column="3" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom"></TextBox>
+                    <TextBox x:Name="PABox" Height="25" Width = "100" IsReadOnly="True" TextWrapping="Wrap" Grid.Row="3" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Center">Play Again</TextBox>
+                    <Button x:Name="PlayAgainButton" Background = "Transparent" Width="100" Height="30" Click="ButtonHandler" Grid.Row="3" Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Center"></Button>
+                    <TextBox x:Name="ResetBox" Background="Transparent" IsReadOnly="True" Height="25" Width = "100" TextWrapping="Wrap" Grid.Row="4" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center">Reset</TextBox>
+                    <Button x:Name="ResetButton" Background="Transparent" Width="100" Height="30" Click="ButtonHandler" Grid.Row="4" Grid.Column="3" VerticalAlignment="Top" HorizontalAlignment="Center"></Button>
+            </Grid>
+        </StackPanel>
+</Window>
